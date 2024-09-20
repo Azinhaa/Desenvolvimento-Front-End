@@ -1,0 +1,44 @@
+        /* h1{
+            color: rgb(128, 0, 92)
+        }
+        p{
+            color:rgb(219, 27, 187) !important
+        }
+
+        /* important prioridade */
+        /* strong{
+            color:rgb(165, 0, 88)
+        } */    
+
+
+#titulo{
+    color: green;
+    text-align:center;
+}
+p#descricao{
+    color: blue;
+}
+.promocao{
+    text-align: center;
+    background-color: aqua;
+}
+h1.promocao{
+    color: yellow;
+}
+.nova-classe{
+    color:brown
+}
+p.final-pagina#rodape {
+    background-color: cadetblue;
+    text-align: center;
+}
+.curso, .novo-curso{
+    background-color: burlywood;
+}
+.novo-curso{
+    color:red;
+}
+.curso, .novo-curso, #contato{
+    padding: 12px;
+    border: 2px solid navy;
+}

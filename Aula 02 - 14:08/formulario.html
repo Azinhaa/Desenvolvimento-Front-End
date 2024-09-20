@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+    <form>
+        <p>
+            <!-- precisa do for -->
+            <label for = "primeironome"> Primeiro Nome</label>
+            <input type="text" id="primeironome"> 
+        </p>
+        <p>
+            <!-- rotulo amarado por id aninhado esta dentro -->
+            <label> 
+                Sobrenome: 
+                <input type ="text" id = "Sobrenome">
+            </label>
+        </p>
+
+        <p> 
+            <!-- input telefone e email no mesmo paragrafo -->
+            <label> 
+                Telefone:
+                <input type="text" id = "Telefone">
+            </label>
+            <label for = "Email" > Email </label>
+            <input type="text">
+        </p>
+
+        <p>
+            <!-- label escolher cor -->
+            <label for="cor" >Escolha a sua cor:  </label>
+            <input type="color" id="cor">
+        </p>
+
+        <p>
+            <!-- label escolher arquivo -->
+            <label for="file"> Escolha um arquivo</label>
+            <input type="file" id="file">
+        </p>
+
+        <p>
+            <!-- add um campo para comentario  -->
+             <label for="comentario"> Deixe seu comentario</label>
+             <textarea id="comentario" rols="3"> </textarea>
+        </p>
+
+        <p>
+            <!-- botao de enviar -->
+            <input type ="submit" value="enviar">
+        </p>
+
+    </form>
+</body>
+</html>

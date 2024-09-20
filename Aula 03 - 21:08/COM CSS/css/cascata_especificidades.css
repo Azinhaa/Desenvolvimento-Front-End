@@ -1,0 +1,22 @@
+/* p{
+    color: red !important;
+} */
+
+#titulo{
+    color: blue;
+}
+.descricao{
+    color: green;
+}
+p{
+    color: red;
+}
+.principal article{  /* 0 1 1*/
+    background-color: aquamarine;
+}
+main article{   /* 0 0 1 (peso)*/
+    background-color: burlywood;
+}
+main, article{
+    border:dotted magenta;
+}
