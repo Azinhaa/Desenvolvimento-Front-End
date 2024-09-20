@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Body audio</title>
+</head>
+
+<body>
+    <h1 style="color: rgb(153, 36, 104);">ELEMENTOS DO BODY</h1>
+    <!-- hiperlink dentro de uma frase-->
+    <br>
+
+    
+
+    <!-- Add audio-->
+    <!-- src - especifica o caminho para o audio-->
+    <!-- alt - especifica um texto alternativo para o audio, se por alguma razão o audio não puder ser disposto -->
+
+    <!-- The <audio> tag is used to embed sound content in a document, such as music or other audio streams.
+    The <audio> tag contains one or more <source> tags with different audio sources. The browser will choose the first source it supports.
+    The text between the <audio> and </audio> tags will only be displayed in browsers that do not support the <audio> element. -->
+
+
+    <!-- AUDIO ADD POR ARQUIVO EX 1 -->
+    <h2 style="color: crimson;">Exemplo de audio via arquivo:</h2>
+    <p> Audio exemplo formato 1
+        <audio controls>
+            <source src="Midias/sound/phonk-huligan-241431.mp3" type="audio/mpeg">
+        </audio>
+        Audio exemplo formato 1
+    </p>
+   
+    <br>
+    <!-- AUDIO ADD POR ARQUIVO EX 2-->
+    <p> 
+        Audio exemplo formato 2
+        <audio
+            controls
+            autoplay
+            loop
+            muted
+            src="Midias/sound/phonk-huligan-241431.mp3">
+        </audio>
+        Audio exemplo formato 2
+    </p>
+    
+    <br>
+    <!-- AUDIO ADD POR ARQUIVO EX 2-->
+    <p> 
+        Audio exemplo formato 3 - hiperlink - 
+        <a href="Midias/sound/phonk-huligan-241431.mp3">phonk</a>
+    </p>
+      
+    <br>
+    <br>
+    <!-- hiperlink dentro de uma frase leva ao menu principal, href referencia o arquivo "MENU"-->
+    <p> Você pode voltar para a página <a href="menu_body.html"> Principal </a></p>
+ 
+   
+
+</body>
+
+</html>

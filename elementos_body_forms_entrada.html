@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0">
+    <title>Forms entrada</title>
+</head>
+
+<body>
+
+    <h1 style="color: rgb(153, 36, 104);">ELEMENTOS DO BODY</h1>
+
+
+    <h2 style="color: crimson;">Exemplo Formuário, elementos de entrada:</h2>
+
+    <!-- form tag starts -->
+    <!-- (Forms) Quando desenvolvemos uma página HTML, muitas vezes ela possui elementos que
+        permitem ao usuário digitar dados que serão enviados a um servidor. Para que esse envio
+        seja possível, utilizamos um elemento do tipo form. Os filhos de um form podem ser de
+        diferentes tipos. Eles podem permitir que o usuário:
+        - digite um texto
+        - escolha um item em um menu
+        - escolha uma cor
+        - escolha um número
+        - escolha uma data
+        Entre muitos outros. Cada elemento filho de um form que permite ao usuário realizar a
+        entrada de algum tipo de dado recebe o nome de controle -->
+
+    <!-- A razão de ser de um elemento form é simplesmente
+        agrupar elementos capazes de receber dados do usuário e viabilizar seu envio - feito pelo
+        navegador - a um servidor -->
+
+    <!-- tag form -->
+    <form> 
+
+        <!-- tag label - define um rótulo (aumenta a área de acerto, ao clicar no texto dentro do label ele alterna a entrada)-->
+        <!-- uso do FOR (relacionar o rótulo com o tipo de entrada)-->
+        <!-- É o atributo de entrada para qual o <label> se destina. Seu valor deve ser igual ao valor do atributo id do elemento controle de entrada (<input>). -->
+        <label for="primeiroNome">
+
+        <!-- o que aparece escito ao user -->
+            Primeiro nome:
+        </label>
+
+       <!-- input com ID, deve ser o mesmo que no FOR -->
+        <input id="primeiroNome" type="text">
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input id="sobrenome" type="text">
+
+        <label for="email">Email:</label>
+        <input id="email" type="email">
+
+        <label for="telefone">Telefone:</label>
+        <input id="telefone" type="tel">
+
+        <label for="cor">Cor:</label>
+        <input id="cor" type="color">
+
+        <label for="arquivo">Arquivo:</label>
+        <input id="arquivo" type="file">
+
+        <label for="mensagem">Sua Mensagem:</label>
+        <textarea id="mensagem" cols="35" rows="10"></textarea>
+
+
+        <!-- input tipo submit -->
+        <input type="submit" value="Enviar">
+
+    <br>
+
+        <!-- outro jeito de escrever -->
+        <!-- <label>
+                Primeiro nome:
+                <input id="primeiroNome" type="text">
+            </label>
+            <label>
+                Sobrenome:
+                <input id="sobrenome" type="text">
+        </label> -->
+
+    </form>
+
+    <p>Voltar para a página <a href="menu_body.html">principal</a></p>
+</body>
+
+</html>
