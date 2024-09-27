@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microdados</title>
+</head>
+<body>
+
+    <h1 style="color: rgb(153, 36, 104);">ELEMENTOS DO BODY</h1>
+    <br>
+
+    <!-- TIPOS DE HEAD(TÍTULOS) -->
+    <h2 style="color: crimson;">Exemplos Microdados:</h2>
+
+    <!-- The <div> tag defines a division or a section in an HTML document.
+    The <div> tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript.
+    The <div> tag is easily styled by using the class or id attribute.
+    Any sort of content can be put inside the <div> tag! -->
+    
+    <!-- A tag <div> cria um bloco genérico para agrupar conteúdos. Ela é equivalente, no grupo de tags de bloco, ao que a tag <span> representa no grupo de
+        tags inline/conteúdo. A função da tag <div> é separar os conteúdos do código HTML em divisões de espaço/conjunto, sem qualquer peso semântico. -->
+    <br>
+    <p>tag < div > tende a ocupar todo o espaço disponível para ela na tela do navegador, são uma espécie de containers onde os dados vão ficar agrupados</p>
+    <br>
+
+    <div>
+
+        <article itemscope itemtype="https://schema.org/Movie">
+            <!-- ITEMPROP = The HTML itemprop attribute is a global attribute, that is basically used to add a property to an item.
+              This is used to add extra information to the web page so that it can be relevant and more specifically searched by the search engines.  -->
+            
+
+            <!-- 1. How to mark up your content using microdata
+1a. Why use microdata?
+Your web pages have an underlying meaning that people understand when they read the web pages. 
+But search engines have a limited understanding of what is being discussed on those pages. By adding additional tags to the HTML of your web pages—tags that say,
+"Hey search engine, this information describes this specific movie, or place, or person, or video"—you can help search engines and other applications better understand 
+your content and display it in a useful, relevant way. Microdata is a set of tags, introduced with HTML5, that allows you to do this.
+
+1b. itemscope and itemtype
+Let's start with a concrete example. Imagine you have a page about the movie Avatar—a page with a link to a movie trailer, information about the director, and so on. 
+Your HTML code might look something like this:
+
+<div>
+ <h1>Avatar</h1>
+ <span>Director: James Cameron (born August 16, 1954)</span>
+ <span>Science fiction</span>
+ <a href="../movies/avatar-theatrical-trailer.html">Trailer</a>
+</div>
+
+To begin, identify the section of the page that is "about" the movie Avatar. 
+To do this, add the itemscope element to the HTML tag that encloses information about the item, like this:
+
+<div itemscope>
+  <h1>Avatar</h1>
+  <span>Director: James Cameron (born August 16, 1954) </span>
+  <span>Science fiction</span>
+  <a href="../movies/avatar-theatrical-trailer.html">Trailer</a>
+</div>
+
+By adding itemscope, you are specifying that the HTML contained in the <div>...</div> block is about a particular item.
+
+But it's not all that helpful to specify that there is an item being discussed without specifying what kind of an item it is. 
+You can specify the type of item using the itemtype attribute immediately after the itemscope.
+
+<div itemscope itemtype="https://schema.org/Movie">
+  <h1>Avatar</h1>
+  <span>Director: James Cameron (born August 16, 1954)</span>
+  <span>Science fiction</span>
+  <a href="../movies/avatar-theatrical-trailer.html">Trailer</a>
+</div>
+This specifies that the item contained in the div is in fact a Movie, as defined in the schema.org type hierarchy. 
+Item types are provided as URLs, in this case https://schema.org/Movie.
+
+
+1c. itemprop
+What additional information can we give search engines about the movie Avatar? Movies have interesting properties such as actors, director, ratings. 
+To label properties of an item, use the itemprop attribute. For example, to identify the director of a movie, add itemprop="director" to the element 
+enclosing the director's name. (There's a full list of all the properties you can associate with a movie at https://schema.org/Movie.)
+
+<div itemscope itemtype ="https://schema.org/Movie">
+  <h1 itemprop="name">Avatar</h1>
+  <span>Director: <span itemprop="director">James Cameron</span> (born August 16, 1954)</span>
+  <span itemprop="genre">Science fiction</span>
+  <a href="../movies/avatar-theatrical-trailer.html" itemprop="trailer">Trailer</a>
+</div>
+
+Note that we have added additional <span>...</span> tags to attach the itemprop attributes to the appropriate text on the page.
+<span> tags don't change the way pages are rendered by a web browser, so they are a convenient HTML element to use with itemprop.
+
+Search engines can now understand not just that http://www.avatarmovie.com is a URL, but also that it's the URL for the trailer for the science-fiction movie Avatar,
+ which was directed by James Cameron. -->
+
+
+Example 2:
+In this example, the search engines can understand that given div has a URL that contains “Information” about a film named “Avengers”
+which is of genre “Action” and is directed by “Russo Brothers”.
+
+    <div itemscope itemtype=
+"https://en.wikipedia.org/wiki/Film">
+        <h1 itemprop="name">Avengers</h1>
+        <br>
+        <span>Directors : 
+            <span itemprop="Directors">
+              Russo Brothers
+            </span>
+        </span> 
+        <br>
+        <span>Genre :
+            <span itemprop="genre"> 
+              Action 
+            </span>
+          </span>
+        <br>
+        <a itemprop="Information" 
+           href=
+"https://en.wikipedia.org/wiki/Avengers_(Marvel_Cinematic_Universe)">
+            Information 
+        </a>
+    </div>
+
+<br>
+
+
+            <h1 itemprop="name ">
+                A star is born
+            </h1>
+            <p itemprop="abstract">
+                A musicina helps a young singer find fame as age and alcoholism send his own career into a downward spiral.
+            </p>
+            <div itemprop="image">
+                <img src="Midias/image/IMG_0274.JPG" alt="flor" height="100">
+            </div>
+            <footer itemprop="director" itemscope itemtype="https://schema.org/Person">
+                Diretor:
+                
+                <!-- The <span> tag is an inline container used to mark up a part of a text, or a part of a document. -->
+                <span itemprop="name">Bradley Cooper.</span>.
+                <span itemprop="birthdate">January 5, 1975.</span>.
+            </footer>
+        </article>
+
+    </div>
+
+</body>
+</html>

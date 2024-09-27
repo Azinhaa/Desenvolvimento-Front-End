@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opções</title>
+</head>
+<body>
+    <h1 style="color: rgb(153, 36, 104);">ELEMENTOS DO BODY</h1>
+    
+
+    
+
+    <h2 style="color: crimson;">Exemplo Seleção</h2>
+
+
+    <form>
+        <label for="estado">Selecione o estado:</label>
+        <!-- The <select> element is used to create a drop-down list.
+        The <select> element is most often used in a form, to collect user input.
+        The name attribute is needed to reference the form data after the form is submitted (if you omit the name attribute, no data from the drop-down list will be submitted).
+        The id attribute is needed to associate the drop-down list with a label.
+        The <option> tags inside the <select> element define the available options in the drop-down list. -->
+    
+        <select id="estado">
+            <!-- escolha de rolagem -->
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Minas Gerais</option>
+            <option>Espírito Santo</option>
+        </select>
+        <br>
+    
+        <br>
+        <!-- The <fieldset> tag is used to group related elements in a form.
+            The <fieldset> tag draws a box around the related elements. -->
+        <fieldset>
+            <!-- The legend tag is used to define the title for the child’s contents. The legend elements are the parent element. 
+             This tag is used to define the caption for the <fieldset> element. -->
+            <legend>Escolha um veículo</legend>
+            <!-- escolha de bolinha -->
+            <input id="X1" type="radio" name="veiculo"><label for="X1">X1</label>
+            <input id="XC60" type="radio" name="veiculo"><label for="XC60">XC60</label>
+            <input id="Discovery" type="radio" name="veiculo"><label for="Discovery">Discovery</label>
+            <input id="Taycan" type="radio" name="veiculo"><label for="Taycan">Taycan</label>
+            <input id="Evoke" type="radio" name="veiculo"><label for="Evoke">Evoke</label>
+        </fieldset>
+    
+        <fieldset>
+            <legend>De quais cores voce gosta?</legend>
+            <!-- id= identificação de cada campo / type= tipo de formato/ name= todas as opções estão associadas à esse nome -->
+            <input id="vermelho" type="checkbox" name="cor"><label for="vermelho">vermelho</label>        
+            <input id="verde" type="checkbox" name="cor"><label for="verde">Verde</label>
+            <input id="laranja" type="checkbox" name="cor"><label for="laranja">Laranja</label>
+        </fieldset>
+    </form>
+   
+
+
+
+
+    <!-- hiperlink dentro de uma frase leva ao menu principal, href referencia o arquivo "MENU"-->
+    <p> Você pode voltar para a página <a href="menu_body.html"> Principal </a></p>
+    <br>
+</body>
+</html>
