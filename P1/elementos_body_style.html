@@ -26,28 +26,74 @@
         }
         .bold{
             font-weight: bold;
+            font-size: 30;
+            border: 2px solid;
+            padding: 15px;
+        }
+        .deco{
+            padding: 15px;
+            text-decoration: line-through;
+            border: 2px solid;
+        }
+
+        .inline{
+            display: inline;
+            background-color: aquamarine;
+            width: 300px;
+            height: 200px;
+            border: 1px solid;
+            
+        
+        }
+        .block{
+            display: block;
+            background-color: aquamarine;
+            width: 300px;
+            height: 300px;
+            border: 1px solid;
+            border-radius:6px;
+        
+        }
+        body{
+            border: 2px solid blue;
+            padding: 50px;
+        }
+        .primeiro{
+            margin-left: 30px;
+        }
+        .segundo{
+            margin-left: 0px;
         }
     </style>
 </head>
 <body>
     
 
-    <p class="pad">
-        Padding é o espaço entre o conteúdo e a borda <br>
-        O colorido é o padding, de 30 px
-    </p>
+        <p class="pad">
+            Padding é o espaço entre o conteúdo e a borda <br>
+            O colorido é o padding, de 30 px
+        </p>
 
-    
-    <p class="bord">
-        A borda é o contorno do "container" <br>
-        O colorido é a borda
-    </p>
 
-    <p class="centro">Este é um texto centralizado usando o "text-align"</p>
+        <p class="bord">
+            A borda é o contorno do "container" <br>
+            O colorido é a borda
+        </p>
 
-    <p class="color">Este é um texto colorido e para direita</p>
+        <p class="centro">Este é um texto centralizado usando o "text-align"</p>
 
-    <p class="bold">Este é um texto em "bold"</p>
+        <p class="color">Este é um texto colorido e para direita</p>
 
+        <p class="bold">Este é um texto em "bold" e fonte tamanho 30</p>
+
+        <p class="deco">Este é um texto decorado</p>
+
+        <!-- block: Quebras de linha são colocadas antes e depois do elemento.
+            inline: Sem quebras de linha, o próximo elemento será exibido na mesma linha se couber. Ocupa somente o espaço necessário para o conteúdo -->
+        <p class="inline">Texto display inline <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ratione, debitis aperiam magnam amet atque officia accusantium esse repellendus numquam quia eum laboriosam! Aliquid consequuntur tempora maxime, sint fuga eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consectetur atque unde repellat dolores beatae eveniet. In incidunt aut placeat molestiae. Aperiam ipsa unde iusto nam neque minus esse adipisci!</p>
+        <p class="block">Texto display block <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, quaerat ipsum eveniet officia quasi minima facere minus quo, autem velit soluta nulla aliquid vero molestias dicta beatae voluptatem blanditiis provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ducimus officia laboriosam est suscipit, nisi deleniti accusamus repellendus vitae aliquid dolor consequuntur id, voluptate impedit possimus dolores! Nisi, veniam <praesentium!lorem></praesentium!lorem>
+
+        <p class="primeiro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum natus repudiandae illo quod exercitationem modi nisi dolorum libero in, ullam, tempora eveniet corrupti. Distinctio quibusdam odit quasi! Sit, beatae perspiciatis.</p>
+        <p class="segundo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati officia incidunt aliquid quas officiis impedit numquam, aspernatur vitae ipsum minima quo expedita, cumque tempora reiciendis quidem explicabo quaerat nemo omnis.</p>
 </body>
 </html>
