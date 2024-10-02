@@ -23,10 +23,18 @@ let filmes=[
     }
 ]
 
-
 //consulta dos filmes fazer ending point parecido com o get oi
 app.get("/filmes", (req, res) => {
     //envia resposta em objeto jason
+    res.json(filmes)
+})
+
+app.post("/filmes", (req, res) =>{
+    //capturar o que user enviar
+    const titulo= req.body.titulo
+    const sinopse= req.body.sinopse
+    const filme= {titulo: titulo, sinopse: sinopse}
+    filmes.push(filme)
     res.json(filmes)
 })
 
